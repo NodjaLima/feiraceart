@@ -6,11 +6,12 @@ import Expositores from './pages/expositores';
 import Blog from './pages/blog';
 import Contato from './pages/contato';
 import Regulamento from './pages/regulamento';
+import Navbar from './components/navbar/Navbar';
 
 function App() {
-
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/admin" element={<Admin />} />
@@ -20,7 +21,7 @@ function App() {
         <Route path="/regulamento" element={<Regulamento />} />
       </Routes>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;
