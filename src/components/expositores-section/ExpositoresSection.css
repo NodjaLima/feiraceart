@@ -1,0 +1,271 @@
+.expositores-section {
+  background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%);
+  padding: 50px 20px;
+  min-height: 450px;
+}
+
+.expositores-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.expositores-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.expositores-subtitle {
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.expositores-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.expositor-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+  position: relative;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.expositor-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.expositor-foto-container {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.expositor-foto {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.expositor-card:hover .expositor-foto {
+  transform: scale(1.05);
+}
+
+.expositor-especialidade-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 15px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.expositor-info {
+  padding: 20px 15px;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.expositor-nome {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2c5282;
+  margin-bottom: 3px;
+}
+
+.expositor-cidade {
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.expositor-descricao {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  text-align: left;
+  height: 63px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  flex: 1;
+}
+
+.expositor-btn {
+  background-color: transparent;
+  border: 2px solid #4CAF50;
+  color: #4CAF50;
+  padding: 8px 16px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.expositor-btn:hover {
+  background-color: #4CAF50;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.expositores-view-all {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.expositores-view-all-btn {
+  background-color: white;
+  color: #4CAF50;
+  border: 2px solid white;
+  padding: 15px 35px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.expositores-view-all-btn:hover {
+  background-color: transparent;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .expositores-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .expositores-section {
+    padding: 40px 15px;
+  }
+  
+  .expositores-title {
+    font-size: 2.5rem;
+  }
+  
+  .expositores-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  
+  .expositores-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 600px;
+  }
+  
+  .expositor-card {
+    height: 300px;
+  }
+  
+  .expositor-foto-container {
+    height: 100px;
+  }
+  
+  .expositor-foto {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .expositor-info {
+    padding: 15px 12px;
+  }
+  
+  .expositor-nome {
+    font-size: 1.1rem;
+  }
+  
+  .expositor-descricao {
+    height: 58px;
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 480px) {
+  .expositores-title {
+    font-size: 2rem;
+  }
+  
+  .expositores-subtitle {
+    font-size: 1rem;
+  }
+  
+  .expositores-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    max-width: 400px;
+  }
+  
+  .expositor-card {
+    height: 280px;
+  }
+  
+  .expositor-foto-container {
+    height: 90px;
+  }
+  
+  .expositor-foto {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .expositor-descricao {
+    height: 54px;
+    line-height: 1.2;
+  }
+}

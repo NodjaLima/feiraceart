@@ -8,7 +8,9 @@
     "module": "commonjs",
     "allowJs": true,
     "jsx": "react-jsx",
-    "types": ["@testing-library/jest-dom", "jest"],
-    "esModuleInterop": true
-  }
+    "types": ["jest"],
+    "esModuleInterop": true,
+    "typeRoots": ["./node_modules/@types", "./src"]
+  },
+  "include": ["src/**/*"]
 }

@@ -1,0 +1,75 @@
+.carrossel-container {
+  width: 100%;
+  height: 60vh;
+  max-height: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carrossel-container .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.carrossel-container .swiper-slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.carrossel-container .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Personalização dos controles do Swiper */
+.carrossel-container .swiper-button-next,
+.carrossel-container .swiper-button-prev {
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
+.carrossel-container .swiper-button-next:after,
+.carrossel-container .swiper-button-prev:after {
+  font-size: 16px;
+}
+
+.carrossel-container .swiper-pagination-bullet {
+  background: white;
+  opacity: 0.7;
+}
+
+.carrossel-container .swiper-pagination-bullet-active {
+  background: #e91e63;
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .carrossel-container {
+    height: 50vh;
+    max-height: 400px;
+  }
+  
+  .carrossel-container .swiper-button-next,
+  .carrossel-container .swiper-button-prev {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .carrossel-container .swiper-button-next:after,
+  .carrossel-container .swiper-button-prev:after {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carrossel-container {
+    height: 40vh;
+    max-height: 300px;
+  }
+}
