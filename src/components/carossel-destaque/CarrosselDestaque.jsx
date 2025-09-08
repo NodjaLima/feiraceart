@@ -5,12 +5,15 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "./CarrosselDestaque.css";
+import logo1 from "../../assets/logo.png";
+import logo2 from "../../assets/logocopy.png";
+import logo3 from "../../assets/logocopy2.png";
 
 const CarrosselDestaque = () => {
   const images = [
-    { src: "/src/assets/logo.png", title: "Título 1" },
-    { src: "/src/assets/logocopy.png", title: "Título 2" },
-    { src: "/src/assets/logocopy2.png", title: "Título 3" },
+    { src: logo1, title: "Título 1" },
+    { src: logo2, title: "Título 2" },
+    { src: logo3, title: "Título 3" },
   ];
 
   return (
