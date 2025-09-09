@@ -1,4 +1,5 @@
 import "./Footer.css";
+import aceLogo from "../../assets/logos/ace-logo.svg";
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-logo-section">
             <img 
-              src="/src/assets/logos/ace-logo.png" 
+              src={aceLogo} 
               alt="ACE - Associação Comercial e Empresarial" 
               className="footer-logo"
             />

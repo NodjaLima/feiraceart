@@ -1,4 +1,5 @@
 import "./Navbar.css";
+import logo from "../../assets/logo.png";
 
 const Navbar = () => {
 
@@ -12,7 +13,7 @@ const Navbar = () => {
             <a href="/regulamento">Regulamento</a>
         </div>
         <div className="navbar-logo">
-            <img src="/src/assets/logo.png" alt="Logomarca da Feira" />
+            <img src={logo} alt="Logomarca da Feira" />
         </div>
     </nav>
   );
